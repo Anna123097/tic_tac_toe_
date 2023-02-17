@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/fon2"
+    >
+    <ImageView
+        android:id="@+id/imageBtnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/btn_play"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageBtnRules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/btn_rules"
+        app:layout_constraintTop_toBottomOf="@+id/imageBtnPlay"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="110dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageBtnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/btn_exit"
+        app:layout_constraintTop_toBottomOf="@+id/imageBtnRules"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="40dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
